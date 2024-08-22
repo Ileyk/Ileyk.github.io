@@ -7,9 +7,9 @@
 // myHeading.textContent = multiply(4, 7);
 
 const captions = [];
-captions[0]=Caption 1;
-captions[1]=Caption 2;
-captions[2]=Caption 3;
+captions[0]="Caption 1";
+captions[1]="Caption 2";
+captions[2]="Caption 3";
 
  function checkIfImageExists(url, callback) {
     const img = new Image();
