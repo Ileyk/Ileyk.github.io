@@ -7,5 +7,5 @@
 
 #caption {
   padding: 5px;
-  width: 750px;
+  max-width: 750px;
 }
