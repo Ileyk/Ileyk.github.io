@@ -6,8 +6,8 @@
 // const myHeading = document.querySelector("h1");
 // myHeading.textContent = multiply(4, 7);
 
-const captions = [];
-captions[0]="Saab"; // line to be replaced by make_anim.py
+// const captions = [];
+// captions[0]="Saab"; // line to be replaced by make_anim.py
 
  function checkIfImageExists(url, callback) {
     const img = new Image();
