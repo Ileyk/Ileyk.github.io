@@ -24,16 +24,18 @@
   }
 
 const myImage = document.querySelector("img");
+const myCaptn = document.getElementById("caption");
 let i=1;
 myImage.onclick = () => {
   var x = event.pageX - myImage.offsetLeft;
   // const myHeading = document.querySelector("h1");
   if(myImage.width/2 < x) { // clicked on the right => next image
     i++;
-    img_name="images/".concat(i.toString()).concat(".png");
+    img_name=i.toString().concat(".png");
     checkIfImageExists(img_name,(exists) => {
       if (exists) {
         myImage.setAttribute("src",img_name);
+        myCaptn.innerText='Plouf'
       } else {
         i=i-1;
       }
@@ -42,9 +44,10 @@ myImage.onclick = () => {
   }
   else { // clicked on the left => previous image
     i=Math.max(1,i-1); // index 1 is the first one
-    img_name="images/".concat(i.toString()).concat(".png");
+    img_name=i.toString().concat(".png");
     // myHeading.textContent = img_name;
-    myImage.setAttribute("src", "images/".concat(i.toString()).concat(".png"));
+    myImage.setAttribute("src",img_name);
+    myCaptn.innerText='Right'
   }
 };
 
