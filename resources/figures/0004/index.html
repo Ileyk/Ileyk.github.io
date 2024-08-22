@@ -6,9 +6,20 @@
     <link href="../styles/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+  <script>
+  MathJax = {
+    loader: {load: ['[tex]/empheq', '[tex]/cases']},
+    tex: {
+      packages: {'[+]': ['empheq', 'cases']}
+    }
+  };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" defer id="MathJax-script"></script>
     <!-- <h1>Mozilla is cool</h1> -->
-    <img src="1.png">
-    <p id="caption"></p>
+    <img id='image' src="1.png">
+    <br>
+    <img id='caption' src="cap_1.png">
+    <!-- <p id="caption"></p> -->
     <script src="main.js"></script>
   </body>
 </html>
